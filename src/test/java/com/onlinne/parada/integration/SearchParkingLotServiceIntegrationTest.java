@@ -40,9 +40,7 @@ public class SearchParkingLotServiceIntegrationTest {
         //when
         //then
         mockMvc.perform(get(PARADA_URI+"/search/"+locationName))
-                .andExpect(jsonPath("$[0].parkingLotId").isNumber())
                 .andExpect(jsonPath("$[0].parkingLotCode").isString())
-                .andExpect(jsonPath("$[0].locationId").isNumber()
-                );
+                .andExpect(jsonPath("$[0].parkingRate").isNumber());
     }
 }
