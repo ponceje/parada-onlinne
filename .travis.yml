@@ -1,4 +1,7 @@
+language: java
+before_script:
+  - ./gradlew assemble
 deploy:
   provider: heroku
   api_key:
-    secure: "cef9b398-962c-454e-9dae-25b3604865f2"
+    secure: cef9b398-962c-454e-9dae-25b3604865f2
