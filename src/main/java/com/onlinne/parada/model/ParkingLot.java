@@ -10,6 +10,7 @@ public class ParkingLot {
     private Integer parkingLotId;
     private String parkingLotCode;
     private double parkingRate;
+    private Integer locationId;
 
     @OneToMany
     @JoinColumn(name = "Parking_Lot_Id")
@@ -54,5 +55,13 @@ public class ParkingLot {
 
     public void setParkingRate(double parkingRate) {
         this.parkingRate = parkingRate;
+    }
+
+    public Integer getLocationId() {
+        return locationId;
+    }
+
+    public void setLocationId(Integer locationId) {
+        this.locationId = locationId;
     }
 }

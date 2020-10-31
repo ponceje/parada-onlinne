@@ -50,7 +50,7 @@ class SearchParkingLotServiceTest {
 
         //When
         when(locationRepository.findByLocationName(locationName)).thenReturn(locationList);
-        when(parkingLotRepository.findAllByLocationId(
+        when(parkingLotRepository.findAllByLocationIdIn(
                 locationList.stream().map(Location::getLocationId).collect(Collectors.toList()))
         ).thenReturn(parkingLotList);
 

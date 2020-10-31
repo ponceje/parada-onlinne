@@ -12,7 +12,7 @@ public class Location {
     private String locationName;
 
     @OneToMany
-    @JoinColumn(name = "Location_Id")
+    @JoinColumn(name = "locationId")
     private List<ParkingLot> parkingLotList;
 
     public Location() {

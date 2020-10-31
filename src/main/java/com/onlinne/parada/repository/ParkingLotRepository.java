@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface ParkingLotRepository extends JpaRepository<ParkingLot, Integer> {
-    List<ParkingLot> findAllByLocationId(List<Integer> locationIds);
+    List<ParkingLot> findAllByLocationIdIn(List<Integer> locationIds);
 }
