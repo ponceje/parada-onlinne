@@ -4,4 +4,4 @@ before_script:
 deploy:
   provider: heroku
   api_key:
-    secure: cef9b398-962c-454e-9dae-25b3604865f2
+    secure: 43c218d4-5b3f-403d-b18f-b3e800db6cdb
